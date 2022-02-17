@@ -1,12 +1,12 @@
 #!/bin/bash
 
 stage=0
-xvector_dir=/PATH/TO/XVECS #path to extracted xvectors
-KALDI_PATH=/PATH/TO/KALDI_ROOT # path to kaldi root
-folds_path=/PATH/TO/FOLDS_DATA # path to where the train/test split folds will be stored
-cfg_path=/PATH/TO/CFG # path to main cfg, $folds_path is data_path in the cfg
+xvector_dir=/content/drive/MyDrive/Data/models #path to extracted xvectors
+KALDI_PATH=/content/../opt/kaldi # path to kaldi root
+folds_path=/content/drive/MyDrive/Data/folds # path to where the train/test split folds will be stored
+cfg_path=/content/nn-similarity-diarization/configs/example.cfg # path to main cfg, $folds_path is data_path in the cfg
 
-num_folds=5 #default num folds is 5
+num_folds=2 #default num folds is 5
 
 if [ $stage -le 0 ]; then
     # makes k-fold dataset (default: 5 folds)
